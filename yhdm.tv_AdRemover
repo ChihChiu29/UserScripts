@@ -5,6 +5,7 @@
 // @date        2020-05-31
 // @author      C. C.
 // @description Remove ads from yhdm.tv.
+// @downloadURL https://raw.githubusercontent.com/ChihChiu29/UserScripts/master/yhdm.tv_AdRemover
 // @include     http://www.yhdm.tv/*
 // @include     https://www.yhdm.tv/*
 // @run-at      document-end
