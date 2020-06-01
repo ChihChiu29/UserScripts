@@ -1,0 +1,16 @@
+// ==UserScript==
+// @name        YHDM TV Ad remover
+// @namespace   cc19
+// @version     1.0
+// @date        2020-05-31
+// @author      C. C.
+// @description Remove ads from yhdm.tv.
+// @include     http://www.yhdm.tv/*
+// @include     https://www.yhdm.tv/*
+// @run-at      document-end
+// ==/UserScript==
+let note = document.querySelector('#note');
+let ad = note.previousSibling;
+let parent = note.parentElement;
+parent.removeChild(note);
+parent.removeChild(ad);
