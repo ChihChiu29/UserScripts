@@ -18,13 +18,18 @@
 
     if (window.location.hostname === 'bluemediafiles.com') {
         runUntil(function() {
-            const adsRight = document.querySelector('#ads-right');
-            const button = adsRight.nextElementSibling.nextElementSibling;
-            if (button && button.tagName === 'DIV') {
+            // const adsRight = document.querySelector('#ads-right');
+            // const button = adsRight.nextElementSibling;
+            // if (button && button.tagName === 'DIV') {
+            //    GM_log('Goodbye redirect page!');
+            //    document.querySelector('form').submit();
+            //}
+            const button = document.querySelector('#nut');
+            if (button) {
                 GM_log('Goodbye redirect page!');
-                document.querySelector('form').submit();
+                button.click();
             }
-        }, 5, 60);
+        }, 15 /*Clicking too soon will go back*/, 60);
     } else if (window.location.hostname === 'mega.nz') {
         runUntil(function() {
             const button = document.querySelector('.download-file');
